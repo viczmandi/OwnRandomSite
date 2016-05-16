@@ -36,15 +36,22 @@ nav ul li a:link{
   text-decoration: none;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   background-color: #999;
   color: #fff;
+}
+nav ul li a:visited{
+    color: #000;
+}
+
+hr{
+  width: 50%;
 }
 
 .jumbotron{
   display: flex;
   align-items: center;
-  background-image: url(http://lorempixel.com/500/200/);
+  background-image: url(http://lorempixel.com/800/400/);
   background-size: cover;
   color: #ff0;
   height: 500px;
@@ -60,10 +67,20 @@ nav ul li a:hover{
 }
 
 section .row img {
-  margin: 0 0 30px;
+  margin: 0 0;
   width: 100%;
 }
 
-.col-md-6 {
-  margin: 0 0 30px;
+.random-pics {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
 }
