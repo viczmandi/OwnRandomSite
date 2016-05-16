@@ -1,0 +1,69 @@
+body{
+  font-family: arial, sans-serif;
+}
+
+header .row, footer .row{
+  display: flex;
+  align-items: center;
+}
+
+header .row h1 a{
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li{
+  float: left;
+}
+
+nav ul li a:link{
+  display: inline-block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  background-color: #999;
+  color: #fff;
+}
+
+.jumbotron{
+  display: flex;
+  align-items: center;
+  background-image: url(http://lorempixel.com/500/200/);
+  background-size: cover;
+  color: #ff0;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.shadow-box{
+  margin-left: 500px;
+  background-color: rgba(204, 204, 204, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
