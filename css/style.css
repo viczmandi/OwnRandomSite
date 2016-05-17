@@ -75,8 +75,18 @@ section .row img {
   margin-top: 25px;
 }
 
-.random-pics {
+img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grey-img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.blur-img{
+  -webkit-filter: blur(5px);
+  filter:blur(5px);
 }
 
 footer {
