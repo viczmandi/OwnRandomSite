@@ -55,6 +55,7 @@ hr{
   background-size: cover;
   color: #ff0;
   height: 500px;
+  margin-top: 25px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -101,7 +102,6 @@ footer .col-sm-8 {
 
 /*contact*/
 
-<style type="text/css">
 .form-style-1 {
     margin:10px auto;
     max-width: 400px;
@@ -185,4 +185,3 @@ select{
 .form-style-1 .required{
     color:red;
 }
-</style>
