@@ -4,5 +4,6 @@ function randomImage(){
     var imgUrl = "https://unsplash.it/360?image=";
     var randImg = imgUrl.concat(rnd_numb);
     document.getElementById("randomImg" + i).setAttribute("src", randImg);
+    document.getElementById("randomImg" + i).setAttribute("alt", randImg);
   }
 }

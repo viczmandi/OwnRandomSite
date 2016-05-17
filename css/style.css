@@ -51,7 +51,7 @@ hr{
 .jumbotron{
   display: flex;
   align-items: center;
-  background-image: url(http://lorempixel.com/800/400/);
+  background-image: url(https://unsplash.it/1200/400/?random);
   background-size: cover;
   color: #ff0;
   height: 500px;
