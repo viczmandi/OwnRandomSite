@@ -5,12 +5,13 @@
     <title>RNDSite</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </head>
-  <body>
+  <body onload="randomImage();">
     <header class="container">
       <div class="row">
         <h1 class="col-sm-4"><a href="index.html">RandomSite</a></h1>
@@ -32,15 +33,42 @@
         </div>
       </div>
     </section>
-    <section class="container">
-      <div class="random-pics">
-        <div class="row">
-          <div class="col-sm-12">
-            <img src="http://lorempixel.com/800/400/abstract/" alt="random picture" />
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="random-pics">
+          <figure class="col-sm-4">
+            <img id="randomImg1" src="" alt="random picture" />
+          </figure>
+        </div>
+        <div class="random-pics">
+          <figure class="col-sm-4">
+            <img id="randomImg2" src="" alt="random picture" />
+          </figure>
+        </div>
+        <div class="random-pics">
+          <figure class="col-sm-4">
+            <img id="randomImg3" src="" alt="random picture" />
+          </figure>
         </div>
       </div>
-    </section>
+      <div class="row">
+        <div class="random-pics">
+          <figure class="col-sm-4">
+            <img id="randomImg4" src="" alt="random picture" />
+          </figure>
+        </div>
+        <div class="random-pics">
+          <figure class="col-sm-4">
+            <img id="randomImg5" src="" alt="random picture" />
+          </figure>
+        </div>
+        <div class="random-pics">
+          <figure class="col-sm-4">
+            <img id="randomImg6" src="" alt="random picture" />
+          </figure>
+        </div>
+      </div>
+    </div>
     <footer class="container">
       <div class="row">
         <div class="col-sm-4">
@@ -50,5 +78,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>
