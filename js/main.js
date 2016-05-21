@@ -23,14 +23,14 @@ function validateContactData(){
   var disabledButton = document.getElementById("submitBtn");
   disabledButton.disabled = true;
 
-  if (firstname.value.length < 3 || firstname.value.length > 15) {
+  if (firstname.value.length <= 3 || firstname.value.length > 15) {
     firstname.style.border = "2px solid #ff0000";
   }else {
     firstname.style.border = "1px solid #b3b3b3";
     validForm += 1;
   }
 
-  if (lastname.value.length < 3 || lastname.value.length > 15) {
+  if (lastname.value.length <= 3 || lastname.value.length > 15) {
     lastname.style.border = "2px solid #ff0000";
   }else {
     lastname.style.border = "1px solid #b3b3b3";
