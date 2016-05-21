@@ -7,3 +7,51 @@ function randomImage(){
     document.getElementById("randomImg" + i).setAttribute("alt", randImg);
   }
 }
+
+function validateContactData(){
+
+  var validForm = 0;
+
+  var firstname = document.getElementById("firstname");
+  var lastname = document.getElementById("lastname");
+  var email = document.getElementById("email");
+  var message = document.getElementById("field5");
+
+  var emailvalue = email.value;
+  var atpos = emailvalue.indexOf("@");
+  var dotpos = emailvalue.lastIndexOf(".");
+  var disabledButton = document.getElementById("submitBtn");
+  disabledButton.disabled = true;
+
+  if (firstname.value.length < 3 || firstname.value.length > 15) {
+    firstname.style.border = "2px solid #ff0000";
+  }else {
+    firstname.style.border = "1px solid #b3b3b3";
+    validForm += 1;
+  }
+
+  if (lastname.value.length < 3 || lastname.value.length > 15) {
+    lastname.style.border = "2px solid #ff0000";
+  }else {
+    lastname.style.border = "1px solid #b3b3b3";
+    validForm += 1;
+  }
+
+  if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailvalue.length) {
+    email.style.border = "2px solid #ff0000";
+  }else {
+    email.style.border = "1px solid #b3b3b3";
+    validForm += 1;
+  }
+
+  if (message.value.length < 20 || message.value.length > 500) {
+    message.style.border = "2px solid #ff0000";
+  }else {
+    message.style.border = "1px solid #b3b3b3";
+    validForm += 1;
+  }
+
+  if (validForm == 4) {
+    disabledButton.disabled = false;
+  }
+}
