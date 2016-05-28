@@ -1,4 +1,5 @@
 (function(app){
+
   app.randomImage = function(){
     for (var i = 1; i <= 6; i++) {
       var rnd_numb = Math.floor((Math.random()*1084)+1);
@@ -8,6 +9,7 @@
       document.getElementById("randomImg" + i).setAttribute("alt", randImg);
     }
   };
+
   app.validateContactData = function(){
     var validForm = 0;
 

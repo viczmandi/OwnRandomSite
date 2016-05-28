@@ -32,15 +32,15 @@
           <form method="get">
             <ul class="form-style-1">
               <li><label>Full Name <span class="required">*</span></label>
-                <input type="text" name="field1" id="firstname" class="field-divided" onchange="validateContactData();" placeholder="First" />&nbsp;<input type="text" name="field2" id="lastname" class="field-divided" onchange="validateContactData();" placeholder="Last" />
+                <input type="text" name="field1" id="firstname" class="field-divided" onchange="myApp.validateContactData();" placeholder="First" />&nbsp;<input type="text" name="field2" id="lastname" class="field-divided" onchange="myApp.validateContactData();" placeholder="Last" />
               </li>
               <li>
                 <label>Email <span class="required">*</span></label>
-                <input type="email" name="field3" id="email" onchange="validateContactData();" class="field-long" />
+                <input type="email" name="field3" id="email" onchange="myApp.validateContactData();" class="field-long" />
               </li>
               <li>
                 <label>Your Message <span class="required">*</span></label>
-                <textarea name="field5" id="field5" onchange="validateContactData();" class="field-long field-textarea"></textarea>
+                <textarea name="field5" id="field5" onchange="myApp.validateContactData();" class="field-long field-textarea"></textarea>
               </li>
               <li>
                 <input type="submit" value="Send" id="submitBtn" disabled />
