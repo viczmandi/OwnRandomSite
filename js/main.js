@@ -55,6 +55,17 @@
     if (validForm == 4) {
       disabledButton.disabled = false;
     }
-
+    
   };
+  app.sendMessage  = function(){
+    var fname = document.getElementById("firstname").value;
+    var lname = document.getElementById("lastname").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("field5").value;
+    var fullName = fname + " " + lname;
+    alert("Your name: " + fullName + "\n" +
+        "Your email: " + email + "\n" +
+        "Message: " + message + "\n\n" +
+        "Your message was sent!");
+  }
 })(window.myApp = window.myApp || {});
